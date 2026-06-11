@@ -416,6 +416,7 @@ export default {
     channelMonitor: 'Channel Monitor',
     channelStatus: 'Channel Status',
     riskControl: 'Risk Control',
+    modules: 'Modules',
   },
 
   // Auth
@@ -4509,6 +4510,34 @@ export default {
       failedToDelete: 'Failed to delete announcement',
       failedToLoadReadStatus: 'Failed to load read status',
       deleteConfirm: 'Are you sure you want to delete this announcement? This action cannot be undone.'
+    },
+
+    // Plugin Modules
+    modules: {
+      title: 'Plugin Modules',
+      description: 'Observe registered plugin modules and their runtime state',
+      columns: {
+        id: 'Module ID',
+        namespace: 'Namespace',
+        name: 'Name',
+        enabled: 'Enabled',
+        state: 'State',
+        error: 'Error'
+      },
+      enabledLabels: {
+        enabled: 'Enabled',
+        disabled: 'Disabled'
+      },
+      stateLabels: {
+        registered: 'Registered',
+        provisioned: 'Provisioned',
+        running: 'Running',
+        stopped: 'Stopped',
+        errored: 'Errored'
+      },
+      noModules: 'No modules registered',
+      noModulesDescription: 'No plugin modules are registered in this build',
+      failedToLoad: 'Failed to load modules'
     },
 
     // Promo Codes
